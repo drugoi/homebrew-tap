@@ -31,7 +31,7 @@ class Diddo < Formula
   end
 
   test do
-    assert_match "diddo", shell_output("#{bin}/diddo --help", 1)
+    assert_match "diddo", shell_output("#{bin}/diddo --help")
   end
 
   livecheck do
