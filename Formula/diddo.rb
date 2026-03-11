@@ -4,25 +4,25 @@
 class Diddo < Formula
   desc "Track your git commits, get AI-powered daily summaries"
   homepage "https://github.com/drugoi/diddo-hooks"
-  version "v0.4.0"
+  version "0.4.1"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/drugoi/diddo-hooks/releases/download/v#{version}/diddo-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "df310518b2155a35ece07a1330bb4e4a3b5364b25532aef68791f9421e92812e"
+      sha256 "77b5150f5ff70db725d5c2bf7fa2dc1d09d96466c622d745c534bc6b33653760"
     else
       url "https://github.com/drugoi/diddo-hooks/releases/download/v#{version}/diddo-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "b37e5610e250ae7dcc140153cdcc50fa1dc1117adb3af7157482a404620417e4"
+      sha256 "6737c6b0d1219cbe06e5ff7b9c47d1cab9b60da389e3afba88bf54059b49b6d5"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/drugoi/diddo-hooks/releases/download/v#{version}/diddo-#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "467a5738463ee55804956f16f36be4d32e19db16a075c46556e7d3f28adb4732"
+      sha256 "508416a864e6b368b4330fdd38f60d20a2a0d411cf90bc8308cf35073fa6d0c8"
     else
       url "https://github.com/drugoi/diddo-hooks/releases/download/v#{version}/diddo-#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b563efd63e8889b55e02c8aa73845c3f124d9cf1984550e0a3e4a5878c17fae8"
+      sha256 "a2f72e284c324d84070a5adf2dc16a6dac558f588431c01e28b1dc268c2982bc"
     end
   end
 
